@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs"); -%>
+<div class="main-heading">
+  <h1>Compose</h1>
+</div>
+<div class="compose">
+  <form class="textinput" action="/compose" method="post">
+    <div class="label-input">
+      <label for="Title">Title</label>
+    </div>
+    <div class="input-heading">
+      <input class="title-input" type="text" name="inputHeading" autofocus>
+    </div>
+    <div class="label-input">
+      <label for="content">Body</label>
+    </div>
+    <div class="input-content">
+        <textarea class="body-input" type="text" name="inputText"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit" class="btn btn-success">publish</button>
+
+    </div>
+
+  </form>
+</div>
+
+<%- include("partials/footer.ejs"); -%>
